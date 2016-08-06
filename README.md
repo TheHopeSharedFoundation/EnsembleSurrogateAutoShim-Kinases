@@ -1,0 +1,2 @@
+# EnsembleSurrogateAutoShim-Kinases
+This is the open source version of Ensemble Surrogate AutoShim (ESA) applied to protein kinases and first developed at the Novartis Institutes for Biomedical Research, Inc. in Emeryville, California by Eric Martin and David Sullivan (DOI: 10.1021/ci700455u).  This open source software is maintained and developed by The Hope Shared Foundation  (TheHopeSharedFoundation.org). Many thanks to Novartis and the dedicated contributors who make this software possible.  
