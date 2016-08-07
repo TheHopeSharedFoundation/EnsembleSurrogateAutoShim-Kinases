@@ -1,0 +1,361 @@
+$D<MSG>
+/_P<message>
+/_V<Message>
+/_S<1>
+/_L<STRLST>
+/_X<Message as sequence of strings>
+|
+$D<VERBOSE>
+/_P<verbose>
+/_V<verbose>
+/_S<1>
+/_L<STRING>
+/_X<verbose: TRUE/FALSE>
+|
+$D<USE_REFERENCE_CONF>
+/_P<use_reference_conf>
+/_V<use_reference_conf>
+/_S<1>
+/_L<STRING>
+/_X<use_reference_conf: TRUE/FALSE>
+|
+$D<DO_SPHERES_FIRST>
+/_P<do_sphere_1st>
+/_V<do_spheres_first_stage>
+/_S<1>
+/_L<STRING>
+/_X<do_spheres_first_stage: TRUE/FALSE>
+|
+$D<DO_SPHERES_SECOND>
+/_P<do_sphere_2nd>
+/_V<do_spheres_second_stage>
+/_S<1>
+/_L<STRING>
+/_X<do_spheres_second_stage: TRUE/FALSE>
+|
+$D<DO_SPHERES_THIRD>
+/_P<do_sphere_3rd>
+/_V<do_spheres_third_stage>
+/_S<1>
+/_L<STRING>
+/_X<do_spheres_third_stage: TRUE/FALSE>
+|
+$D<DO_ENERGY_FIRST>
+/_P<do_energy_1st>
+/_V<do_energy_first_stage>
+/_S<1>
+/_L<STRING>
+/_X<do_energy_first_stage: TRUE/FALSE>
+|
+$D<DO_ENERGY_SECOND>
+/_P<do_energy_2nd>
+/_V<do_energy_second_stage>
+/_S<1>
+/_L<STRING>
+/_X<do_energy_second_stage: TRUE/FALSE>
+|
+$D<DO_ENERGY_THIRD>
+/_P<do_energy_3rd>
+/_V<do_energy_third_stage>
+/_S<1>
+/_L<STRING>
+/_X<do_energy_third_stage: TRUE/FALSE>
+|
+$D<ADDH>
+/_P<addH>
+/_V<generate all hydrogens>
+/_S<1>
+/_L<STRING>
+/_X<generate all hydrogens: TRUE/FALSE>
+|
+$D<ZAPH>
+/_P<zapH>
+/_V<remove all explicit hydrogens>
+/_S<1>
+/_L<STRING>
+/_X<remove all explicit hydrogens: TRUE/FALSE>
+|
+$D<RANDOM_CONSTRAINT_MATCH>
+/_P<random_constraint_match>
+/_V<choose random match for ligand atom>
+/_S<1>
+/_L<STRING>
+/_X<choose random match from multiple possible: TRUE/FALSE>
+|
+$D<BUMP14>
+/_P<bump14>
+/_V<enable 1,4 bumping>
+/_S<1>
+/_L<STRING>
+/_X<enable 1,4 bumping: TRUE/FALSE>
+|
+$D<RANDCOORD>
+/_P<randcoord>
+/_V<enable random coordinates>
+/_S<1>
+/_L<STRING>
+/_X<enable random coordinates: TRUE/FALSE>
+|
+$D<TIGHT_SPHERE_SCORE>
+/_P<tight_sphere_score>
+/_V<minimum score for tight spheres>
+/_S<1>
+/_L<INTEGER>
+/_X<minimum score for tight spheres>
+|
+$D<SPHERE_NEIGHBORS>
+/_P<sphere_neighbors>
+/_V<number of sphere neighbors>
+/_S<1>
+/_L<INTEGER>
+/_X<number of sphere neighbors>
+|
+$D<SPHERE_NEIGHBOR_UPDATE_RATE>
+/_P<sphere_neighbor_update>
+/_V<sphere neighbor update frequency>
+/_S<1>
+/_L<INTEGER>
+/_X<sphere neighbor update frequency>
+|
+$D<SITE_NEIGHBOR_UPDATE_RATE>
+/_P<site_neighbor_update>
+/_V<site neighbor update frequency>
+/_S<1>
+/_L<INTEGER>
+/_X<site neighbor update frequency>
+|
+$D<SEED>
+/_P<seed>
+/_V<random number seed>
+/_S<1>
+/_L<INTEGER>
+/_X<random number seed>
+|
+$D<NUM_CONFORMATIONS>
+/_P<num_conformations>
+/_V<number of conformations to generate>
+/_S<1>
+/_L<INTEGER>
+/_X<number of conformations to generate>
+|
+$D<TRIALS>
+/_P<trials>
+/_V<random trials>
+/_S<1>
+/_L<INTEGER>
+/_X<random trials>
+|
+$D<BEST_CONFORMATIONS>
+/_P<best_conformations>
+/_V<number of best conformations to return>
+/_S<1>
+/_L<INTEGER>
+/_X<number of best conformations to return>
+|
+$D<DIELECTRIC>
+/_P<dielectric>
+/_V<dielectric constant>
+/_S<1>
+/_L<REAL>
+/_X<dielectric constant>
+|
+$D<SITE_CUTOFF>
+/_P<site_cutoff>
+/_V<cutoff distance in angstroms for including site atoms>
+/_S<1>
+/_L<REAL>
+/_X<cutoff distance in angstroms for including site atoms>
+|
+$D<ENERGY_CUTOFF>
+/_P<energy_cutoff>
+/_V<cutoff distance in angstroms for energy calculation>
+/_S<1>
+/_L<REAL>
+/_X<cutoff distance in angstroms for energy calculation>
+|
+$D<MXDV>
+/_P<mxdv>
+/_V<max distance violation, angstroms>
+/_S<1>
+/_L<REAL>
+/_X<max distance violation, angstroms>
+|
+$D<MXVV>
+/_P<mxvv>
+/_V<max chiral volume violation, cubic angstroms>
+/_S<1>
+/_L<REAL>
+/_X<max chiral volume violation, cubic angstroms>
+|
+$D<CONVERGENCE_1ST>
+/_P<convergence_1st>
+/_V<gradient norm required for 1st stage convergence>
+/_S<1>
+/_L<REAL>
+/_X<gradient norm required for 1st stage convergence>
+|
+$D<CONVERGENCE_2ND>
+/_P<convergence_2nd>
+/_V<gradient norm required for 2nd stage convergence>
+/_S<1>
+/_L<REAL>
+/_X<gradient norm required for 2nd stage convergence>
+|
+$D<CONVERGENCE_3RD>
+/_P<convergence_3rd>
+/_V<gradient norm required for 3rd stage convergence>
+/_S<1>
+/_L<REAL>
+/_X<gradient norm required for 3rd stage convergence>
+|
+$D<EVAL_LIMIT_1ST>
+/_P<eval_limit_1st>
+/_V<maximum number function evaluations allowd for 1st stage>
+/_S<1>
+/_L<INTEGER>
+/_X<maximum number function evaluations allowd for 1st stage>
+|
+$D<EVAL_LIMIT_2ND>
+/_P<eval_limit_2nd>
+/_V<maximum number function evaluations allowd for 2nd stage>
+/_S<1>
+/_L<INTEGER>
+/_X<maximum number function evaluations allowd for 2nd stage>
+|
+$D<EVAL_LIMIT_3RD>
+/_P<eval_limit_3rd>
+/_V<maximum number function evaluations allowd for 3rd stage>
+/_S<1>
+/_L<INTEGER>
+/_X<maximum number function evaluations allowd for 3rd stage>
+|
+$D<SCALE_4D_1ST>
+/_P<scale_4d_1st>
+/_V<4D weight for 1st stage>
+/_S<1>
+/_L<REAL>
+/_X<4D weight for 1st stage>
+|
+$D<SCALE_4D_2ND>
+/_P<scale_4d_2nd>
+/_V<4D weight for 2nd stage>
+/_S<1>
+/_L<REAL>
+/_X<4D weight for 2nd stage>
+|
+$D<SCALE_4D_3RD>
+/_P<scale_4d_3rd>
+/_V<4D weight for 3rd stage>
+/_S<1>
+/_L<REAL>
+/_X<4D weight for 3rd stage>
+|
+$D<SCALE_SPHERE_1ST>
+/_P<scale_sphere_1st>
+/_V<sphere weight for 1st stage>
+/_S<1>
+/_L<REAL>
+/_X<sphere weight for 1st stage>
+|
+$D<SCALE_SPHERE_2ND>
+/_P<scale_sphere_2nd>
+/_V<sphere weight for 2nd stage>
+/_S<1>
+/_L<REAL>
+/_X<sphere weight for 2nd stage>
+|
+$D<SCALE_SPHERE_3RD>
+/_P<scale_sphere_3rd>
+/_V<sphere weight for 3rd stage>
+/_S<1>
+/_L<REAL>
+/_X<sphere weight for 3rd stage>
+|
+$D<SCALE_ENERGY_1ST>
+/_P<scale_energy_1st>
+/_V<energy weight for 1st stage>
+/_S<1>
+/_L<REAL>
+/_X<energy weight for 1st stage>
+|
+$D<SCALE_ENERGY_2ND>
+/_P<scale_energy_2nd>
+/_V<energy weight for 2nd stage>
+/_S<1>
+/_L<REAL>
+/_X<energy weight for 2nd stage>
+|
+$D<SCALE_ENERGY_3RD>
+/_P<scale_energy_3rd>
+/_V<energy weight for 3rd stage>
+/_S<1>
+/_L<REAL>
+/_X<energy weight for 3rd stage>
+|
+$D<SCALE_CONSTRAINTS_1ST>
+/_P<scale_constraints_1st>
+/_V<constraints weight for 1st stage>
+/_S<1>
+/_L<REAL>
+/_X<constraints weight for 1st stage>
+|
+$D<SCALE_CONSTRAINTS_2ND>
+/_P<scale_constraints_2nd>
+/_V<constraints weight for 2nd stage>
+/_S<1>
+/_L<REAL>
+/_X<constraints weight for 2nd stage>
+|
+$D<SCALE_CONSTRAINTS_3RD>
+/_P<scale_constraints_3rd>
+/_V<constraints weight for 3rd stage>
+/_S<1>
+/_L<REAL>
+/_X<constraints weight for 3rd stage>
+|
+$MSG<"dock options">
+/VERBOSE<FALSE>
+/USE_REFERENCE_CONF<FALSE>
+/DO_SPHERES_FIRST<TRUE>
+/DO_SPHERES_SECOND<FALSE>
+/DO_SPHERES_THIRD<FALSE>
+/DO_ENERGY_FIRST<FALSE>
+/DO_ENERGY_SECOND<TRUE>
+/DO_ENERGY_THIRD<TRUE>
+/ADDH<TRUE>
+/ZAPH<FALSE>
+/BUMP14<FALSE>
+/RANDCOORD<FALSE>
+/RANDOM_CONSTRAINT_MATCH<TRUE>
+/TIGHT_SPHERE_SCORE<1.0>
+/SPHERE_NEIGHBORS<30>
+/SPHERE_NEIGHBOR_UPDATE_RATE<50>
+/SITE_NEIGHBOR_UPDATE_RATE<100>
+/SEED<RANDOM>
+/NUM_CONFORMATIONS<150>
+/TRIALS<10>
+/BEST_CONFORMATIONS<100>
+/DIELECTRIC<2.0>
+/SITE_CUTOFF<7.0>
+/ENERGY_CUTOFF<5.0>
+/MXDV<0.5>
+/MXVV<0.5>
+/CONVERGENCE_1ST<0.2>
+/CONVERGENCE_2ND<0.2>
+/CONVERGENCE_3RD<0.2>
+/EVAL_LIMIT_1ST<1000>
+/EVAL_LIMIT_2ND<1000>
+/EVAL_LIMIT_3RD<1000>
+/SCALE_4D_1ST<0.0>
+/SCALE_4D_2ND<0.5>
+/SCALE_4D_3RD<0.5>
+/SCALE_SPHERE_1ST<0.7>
+/SCALE_SPHERE_2ND<0.1>
+/SCALE_SPHERE_3RD<0.1>
+/SCALE_ENERGY_1ST<0.02>
+/SCALE_ENERGY_2ND<0.04>
+/SCALE_ENERGY_3RD<0.02>
+/SCALE_CONSTRAINTS_1ST<1.0>
+/SCALE_CONSTRAINTS_2ND<1.0>
+/SCALE_CONSTRAINTS_3RD<1.0>
+|
