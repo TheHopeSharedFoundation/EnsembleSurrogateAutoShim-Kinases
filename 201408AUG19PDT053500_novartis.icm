@@ -1,0 +1,76 @@
+l_commands = l_warn = l_info = no
+read libraries
+call _aliases
+call _macro
+call _ligedit
+
+#call _startup
+
+S_files = Getarg(list)
+
+read pdb S_files[1]
+
+s_infile = S_files[2]
+if (s_infile == "-") then
+  s_infile = "stdin"
+  s_outfile = "stdout"
+else
+  s_infile = "\"" +  S_files[2] + "\" keep"
+  s_outfile = Name(S_files[2]) + "_out.sdf"
+  delete system s_outfile
+  s_outfile = "\"" + s_outfile + "\""
+endif
+
+read table mol $s_infile name="t" limit=1
+l_first = yes
+
+convertObject a_ yes yes yes no yes yes yes
+
+read mol t.mol[1] 
+setLigandBoxSelection a_ a_1. no Real( 3. )
+delete a_
+
+e3dSetReceptor a_ yes no no no "" yes yes yes yes
+
+while (yes)
+
+  if (!l_first) then
+    read table mol $s_infile name="t" limit=32
+    if (l_out) break
+  else
+    l_first = no
+  endif
+
+  add column t Rarray(Nof(t)) name="ScoreAfterMin"
+  for i=1,6
+    add column t Rarray(Nof(t)) name=LIGAND.resultColumns[i]
+  endfor
+
+  for i=1,Nof(t)
+    print "processing " + i #+ " of " + Nof(t)
+    read mol t.mol[i]
+    build hydrogen
+    set type charge mmff
+    e3dSetLigand  a_ no yes 7.0
+
+    processLigandICM a_LIG.I "minimize" Sarray()
+    t.mol[i] = Chemical( a_ exact hydrogen )
+    t.ScoreAfterMin[i] = LIGAND.score[1]
+    for j=1,6
+      s_column = LIGAND.resultColumns[j]
+      t.$s_column [i] = LIGAND.score[j+2]
+    endfor
+
+    delete a_
+  endfor
+
+  if (s_outfile == "stdout") then
+    write binary frame  t
+  else
+    write table mol append t $s_outfile 
+  endif
+  delete t
+
+endwhile
+
+quit
