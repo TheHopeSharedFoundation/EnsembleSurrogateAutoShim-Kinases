@@ -1,0 +1,92 @@
+# $Id: BaseFeatures.fdef 489 2008-01-22 04:55:30Z glandrum $
+#
+# autoshim fdef file.
+# Created by Clayton Aug 2010
+# intented to mimic the definitions in the SEA file
+#
+
+
+
+# these are the definitions from SEA
+#
+# define EWG      "[$(C#N),$(N(=O)=O),$(S(=O)=O),$(C=O),$(cn),$(cccn),$([N;+])]";
+# define a1       "[O;H]C=[O,N]";
+# define a2       "[O;H]S(=O)=O";
+# define a3       "[O;H]cn";
+# define a5       "[O;H]cccn";
+# define a7       "[C;!H0](C=O)C=O";
+# define a8       "[N,O;!H0]([$EWG])S(=O)=O";
+# define a9       "[N,O;!H0]S(=O)(=O)[$EWG]";
+# define a10      "[O;H]cc[$EWG]";
+# define a11      "[O;H]cccc[$EWG]";
+# define ACID     "[$a1,$a2,$a3,$a5,$a7,$a8,$a9,$a10,$a11]";
+# define EDG      "[O,N,$ACID]";
+# define b1       "[N;H2;!+][CX4]";
+# define b2       "[N;H1;!+]([CX4])[CX4]";
+# define b3       "[N;H0;!+]([CX4])([CX4])[CX4]";
+# define b4       "n1c[n;H]cc1";
+# define b5       "[n;H]1cncc1";
+# define b6       "[N;H3;+][CX4]";
+# define b7       "[N;H2;+]([CX4])[CX4]";
+# define b8       "[N;H1;+]([CX4])([CX4])[CX4]";
+# define BASE     "[$b1,$b2,$b3,$b4,$b5,$b6,$b7,$b8]";
+# define HDon     "[$([n,O,N;!H0;!$ACID]),$b3]";
+# define NOLP     "[$(N[CX3]),$([nX3]),$(Nc),$(NS=O)]";
+# define HAcc     "[N,O,F,n,o;!$BASE;!+;!$NOLP]";
+# define Polar "[$([!#6]),$([#6]~[!#6])]";
+
+# RDKit version
+
+AtomType EWG [$(C#N),$(N(=O)=O),$(S(=O)=O),$(C=O),$(cn),$(cccn),$([N;+])]
+AtomType a1  [O;H]C=[O,N]
+AtomType a2  [O;H]S(=O)=O
+AtomType a3  [O;H]cn
+AtomType a5  [O;H]cccn
+AtomType a7  [C;!H0](C=O)C=O
+AtomType a8  [N,O;!H0]([{EWG}])S(=O)=O
+AtomType a9  [N,O;!H0]S(=O)(=O)[{EWG}]
+AtomType a10 [O;H]cc[{EWG}]
+AtomType a11 [O;H]cccc[{EWG}]
+AtomType ACID [{a1},{a2},{a3},{a5},{a7},{a8},{a9},{a10},{a11}]  # orig
+AtomType EDG  [O,N,{ACID}]
+AtomType b1   [N;H2;!+][CX4]
+AtomType b2   [N;H1;!+]([CX4])[CX4]
+AtomType b3   [N;H0;!+]([CX4])([CX4])[CX4]
+AtomType b4   n1c[n;H]cc1
+AtomType b5   [n;H]1cncc1
+AtomType b6   [N;H3;+][CX4]
+AtomType b7   [N;H2;+]([CX4])[CX4]
+AtomType b8   [N;H1;+]([CX4])([CX4])[CX4]
+AtomType BASE [{b1},{b2},{b3},{b4},{b5},{b6},{b7},{b8}]
+AtomType HDon [$([n,O,N;!H0;!{ACID}]),{b3}]
+AtomType NOLP [$(N[CX3]),$([nX3]),$(Nc),$(NS=O)]
+AtomType HAcc [N,O,F,n,o;!{BASE};!+;!{NOLP}]
+AtomType Polar [$([!#6]),$([#6]~[!#6])]
+
+DefineFeature NonPolar [!{Polar}]
+  Family NonPolar
+  Weights 1
+EndFeature
+
+DefineFeature Aromatic [a]
+  Family Aromatic
+  Weights 1
+EndFeature
+
+DefineFeature AnyAtom [*]
+  Family AnyAtom
+  Weights 1
+EndFeature
+
+
+DefineFeature HDonor [{HDon}]
+  Family HDonor
+  Weights 1
+EndFeature
+
+DefineFeature HAcceptor [{HAcc}]
+  Family HAcceptor
+  Weights 1
+EndFeature
+
+
