@@ -1,0 +1,153 @@
+#>R MKER_8F18_aurora.R_4DscoreOffsets
+  0.
+#>R MKER_8F18_aurora.R_boxDim
+  18.7331
+  -9.66621
+  63.1535
+  49.5939
+  20.6419
+  100.871
+#>R MKER_8F18_aurora.R_ligInitPosition
+  36.996
+  2.083
+  77.415
+  1.
+  0.
+  0.
+  0.
+  1.
+  0.
+#>R MKER_8F18_aurora.R_scoreWeights
+  0.
+  1.
+  0.6
+  0.66
+  2.53
+  0.67
+  0.75
+#>i MKER_8F18_aurora.i_dbSize
+ 1
+#>i MKER_8F18_aurora.i_maxHdonors
+ 5
+#>i MKER_8F18_aurora.i_maxLigSize
+ 500
+#>i MKER_8F18_aurora.i_maxNO
+ 10
+#>i MKER_8F18_aurora.i_maxTorsion
+ 10
+#>i MKER_8F18_aurora.i_minLigSize
+ 100
+#>i MKER_8F18_aurora.i_mnconf
+ 40
+#>i MKER_8F18_aurora.i_mnhighEnergy
+ 9999
+#>i MKER_8F18_aurora.i_mnreject
+ 10
+#>i MKER_8F18_aurora.i_mnvisits
+ 10
+#>i MKER_8F18_aurora.i_ringFlexLevel
+ 0
+#>l MKER_8F18_aurora.l_assignCharges
+  yes
+#>l MKER_8F18_aurora.l_buildHydrogens
+  yes
+#>l MKER_8F18_aurora.l_dbondCisTrans
+  no
+#>l MKER_8F18_aurora.l_internalHB
+  no
+#>l MKER_8F18_aurora.l_neutralAcidsMol
+  no
+#>l MKER_8F18_aurora.l_protProt
+  no
+#>l MKER_8F18_aurora.l_readyLigand
+  no
+#>l MKER_8F18_aurora.l_readyMaps
+  yes
+#>l MKER_8F18_aurora.l_readyReceptor
+  yes
+#>l MKER_8F18_aurora.l_samplePyramid
+  no
+#>l MKER_8F18_aurora.l_sampleRacemic
+  no
+#>l MKER_8F18_aurora.l_softLigand
+  yes
+#>l MKER_8F18_aurora.l_useBornScore
+  yes
+#>r MKER_8F18_aurora.r_GRID_maxVw
+  4.
+#>r MKER_8F18_aurora.r_ScoreThreshold
+  -32.
+#>r MKER_8F18_aurora.r_Score_maxVw
+  1.
+#>r MKER_8F18_aurora.r_densityWeight
+  0.
+#>r MKER_8F18_aurora.r_dockScanVersion
+  4.41
+#>r MKER_8F18_aurora.r_maxPk
+  5.
+#>r MKER_8F18_aurora.r_mcShake
+  4.
+#>r MKER_8F18_aurora.r_mfScoreThreshold
+  999.
+#>r MKER_8F18_aurora.r_minPk
+  0.
+#>r MKER_8F18_aurora.r_pH
+  7.
+#>r MKER_8F18_aurora.r_temperature
+  1000.
+#>r MKER_8F18_aurora.r_thTautomer
+  -1.
+#>r MKER_8F18_aurora.r_vicinity
+  1.
+#>s MKER_8F18_aurora.s_bindPatchRes
+a_MKER_8F18_aurora_rec.m/^G135:^K142,^V146:^L148,^A159:^K161,^L177,^E180:^V181,^I183:^S185,^L187,^I192:^L195,^L207,^L209:^T216,^Y218:^R219,^V251:^H253,^E259:^N260,^L262,^K270,^A272:^S277
+#>s MKER_8F18_aurora.s_chargeGroups
+auto
+#>s MKER_8F18_aurora.s_clrLig
+default
+#>s MKER_8F18_aurora.s_clrRec
+grey
+#>s MKER_8F18_aurora.s_clrSite
+default pink
+#>s MKER_8F18_aurora.s_covModResAt
+none
+#>s MKER_8F18_aurora.s_covRxn
+none
+#>s MKER_8F18_aurora.s_dbFile
+/data/acd/acd
+#>s MKER_8F18_aurora.s_dbIndex
+/data/inx/acd
+#>s MKER_8F18_aurora.s_dbType
+mol 2D
+#>s MKER_8F18_aurora.s_dspLig
+xstick
+#>s MKER_8F18_aurora.s_dspRec
+wire
+#>s MKER_8F18_aurora.s_dspSite
+xstick
+#>s MKER_8F18_aurora.s_grid4DFlex
+none
+#>s MKER_8F18_aurora.s_ligMol
+2:2
+#>s MKER_8F18_aurora.s_ligName
+deflig
+#>s MKER_8F18_aurora.s_optSC
+a_none
+#>s MKER_8F18_aurora.s_recExplicitObj
+none
+#>s MKER_8F18_aurora.s_recMol
+1:1
+#>s MKER_8F18_aurora.s_recName
+MKER_8F18_aurora_rec
+#>s MKER_8F18_aurora.s_selLig
+a_*.*//*
+#>s MKER_8F18_aurora.s_selRec
+a_*.*//*
+#>s MKER_8F18_aurora.s_selSite
+a_*.*//!M5
+#>s MKER_8F18_aurora.s_templateMatch
+substructure
+#>s MKER_8F18_aurora.s_templateObj
+none
+#>s MKER_8F18_aurora.s_xrObj
+none
