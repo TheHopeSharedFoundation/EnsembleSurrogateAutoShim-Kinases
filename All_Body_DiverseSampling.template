@@ -1,0 +1,74 @@
+
+  POPULATION
+popsiz = 100
+select_pressure = 1.1
+n_islands = 5
+maxops = 100000
+niche_siz = 2
+
+  GENETIC OPERATORS
+pt_crosswt = 95
+allele_mutatewt = 95
+migratewt = 10
+
+  DATA FILES
+ligand_data_file REPLACE_LIGAND 10
+param_file = DEFAULT
+set_ligand_atom_types = 1
+set_protein_atom_types = 1
+directory = REPLACE_DIRECTORY
+tordist_file = DEFAULT
+make_subdirs = 0
+save_lone_pairs = 0
+fit_points_file = fit_pts.mol2
+read_fitpts = 0
+
+  FLAGS
+internal_ligand_h_bonds = 0
+flip_free_corners = 0
+match_ring_templates = 0
+flip_amide_bonds = 0
+flip_planar_n = 1 flip_ring_NRR flip_ring_NHR
+flip_pyramidal_n = 0
+rotate_carboxylic_oh = flip
+use_tordist = 1
+postprocess_bonds = 1
+rotatable_bond_override_file = DEFAULT
+diverse_solutions = 1
+divsol_rmsd = 2
+divsol_cluster_size = 2
+solvate_all = 1
+
+  TERMINATION
+early_termination = 0
+n_top_solutions = 3
+rms_tolerance = 1.5
+
+  CONSTRAINTS
+force_constraints = 0
+
+  COVALENT BONDING
+covalent = 0
+
+  SAVE OPTIONS
+save_score_in_file = 0
+save_protein_torsions = 0
+per_atom_scores = 0
+save_per_atom_scores_to_charge_field = 0
+concatenated_output = REPLACE_OUTPUT
+clean_up_option delete_all_solutions
+clean_up_option delete_redundant_log_files
+clean_up_option delete_empty_directories
+output_file_format = sdf
+
+  FITNESS FUNCTION SETTINGS
+initial_virtual_pt_match_max = 2.5
+relative_ligand_energy = 0
+gold_fitfunc_path = goldscore
+start_vdw_linear_cutoff = 4
+score_param_file = DEFAULT
+
+  PROTEIN DATA
+protein_datafile = REPLACE_PROTEIN
+
+
