@@ -1,0 +1,153 @@
+#>R MKER_8F18_egf.R_4DscoreOffsets
+  0.
+#>R MKER_8F18_egf.R_boxDim
+  18.3728
+  -11.096
+  59.3559
+  49.349
+  21.635
+  97.6989
+#>R MKER_8F18_egf.R_ligInitPosition
+  36.996
+  2.083
+  77.415
+  1.
+  0.
+  0.
+  0.
+  1.
+  0.
+#>R MKER_8F18_egf.R_scoreWeights
+  0.
+  1.
+  0.6
+  0.66
+  2.53
+  0.67
+  0.75
+#>i MKER_8F18_egf.i_dbSize
+ 1
+#>i MKER_8F18_egf.i_maxHdonors
+ 5
+#>i MKER_8F18_egf.i_maxLigSize
+ 500
+#>i MKER_8F18_egf.i_maxNO
+ 10
+#>i MKER_8F18_egf.i_maxTorsion
+ 10
+#>i MKER_8F18_egf.i_minLigSize
+ 100
+#>i MKER_8F18_egf.i_mnconf
+ 40
+#>i MKER_8F18_egf.i_mnhighEnergy
+ 9999
+#>i MKER_8F18_egf.i_mnreject
+ 10
+#>i MKER_8F18_egf.i_mnvisits
+ 10
+#>i MKER_8F18_egf.i_ringFlexLevel
+ 0
+#>l MKER_8F18_egf.l_assignCharges
+  yes
+#>l MKER_8F18_egf.l_buildHydrogens
+  yes
+#>l MKER_8F18_egf.l_dbondCisTrans
+  no
+#>l MKER_8F18_egf.l_internalHB
+  no
+#>l MKER_8F18_egf.l_neutralAcidsMol
+  no
+#>l MKER_8F18_egf.l_protProt
+  no
+#>l MKER_8F18_egf.l_readyLigand
+  no
+#>l MKER_8F18_egf.l_readyMaps
+  yes
+#>l MKER_8F18_egf.l_readyReceptor
+  yes
+#>l MKER_8F18_egf.l_samplePyramid
+  no
+#>l MKER_8F18_egf.l_sampleRacemic
+  no
+#>l MKER_8F18_egf.l_softLigand
+  yes
+#>l MKER_8F18_egf.l_useBornScore
+  yes
+#>r MKER_8F18_egf.r_GRID_maxVw
+  4.
+#>r MKER_8F18_egf.r_ScoreThreshold
+  -32.
+#>r MKER_8F18_egf.r_Score_maxVw
+  1.
+#>r MKER_8F18_egf.r_densityWeight
+  0.
+#>r MKER_8F18_egf.r_dockScanVersion
+  4.41
+#>r MKER_8F18_egf.r_maxPk
+  5.
+#>r MKER_8F18_egf.r_mcShake
+  4.
+#>r MKER_8F18_egf.r_mfScoreThreshold
+  999.
+#>r MKER_8F18_egf.r_minPk
+  0.
+#>r MKER_8F18_egf.r_pH
+  7.
+#>r MKER_8F18_egf.r_temperature
+  1000.
+#>r MKER_8F18_egf.r_thTautomer
+  -1.
+#>r MKER_8F18_egf.r_vicinity
+  1.
+#>s MKER_8F18_egf.s_bindPatchRes
+a_MKER_8F18_egf_rec.m/^K716:^G724,^V726:^K728,^A743:^E746,^E762,^V765:^A767,^V769,^V774:^L777,^L788:^Y801,^L828,^L833:^H835,^D837:^N842,^L844,^T854:^L861,^V876:^P877,^F997:^M1002
+#>s MKER_8F18_egf.s_chargeGroups
+auto
+#>s MKER_8F18_egf.s_clrLig
+default
+#>s MKER_8F18_egf.s_clrRec
+grey
+#>s MKER_8F18_egf.s_clrSite
+default pink
+#>s MKER_8F18_egf.s_covModResAt
+none
+#>s MKER_8F18_egf.s_covRxn
+none
+#>s MKER_8F18_egf.s_dbFile
+/data/acd/acd
+#>s MKER_8F18_egf.s_dbIndex
+/data/inx/acd
+#>s MKER_8F18_egf.s_dbType
+mol 2D
+#>s MKER_8F18_egf.s_dspLig
+xstick
+#>s MKER_8F18_egf.s_dspRec
+wire
+#>s MKER_8F18_egf.s_dspSite
+xstick
+#>s MKER_8F18_egf.s_grid4DFlex
+none
+#>s MKER_8F18_egf.s_ligMol
+2:2
+#>s MKER_8F18_egf.s_ligName
+deflig
+#>s MKER_8F18_egf.s_optSC
+a_none
+#>s MKER_8F18_egf.s_recExplicitObj
+none
+#>s MKER_8F18_egf.s_recMol
+1:1
+#>s MKER_8F18_egf.s_recName
+MKER_8F18_egf_rec
+#>s MKER_8F18_egf.s_selLig
+a_*.*//*
+#>s MKER_8F18_egf.s_selRec
+a_*.*//*
+#>s MKER_8F18_egf.s_selSite
+a_*.*//!M5
+#>s MKER_8F18_egf.s_templateMatch
+substructure
+#>s MKER_8F18_egf.s_templateObj
+none
+#>s MKER_8F18_egf.s_xrObj
+none
