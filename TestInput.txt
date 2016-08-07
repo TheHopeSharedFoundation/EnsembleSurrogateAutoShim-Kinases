@@ -1,0 +1,12 @@
+214221 1 2.3   sdfasdfasdf 
+214221 2 2.3   asdfasdfasdfa
+214221 3 -2.3  asdfasdfasdf
+144213 1 2.3   awgawasfasdfas
+144214 1 2.3   asdfasdfasfda
+124451 1 2.3   asdfwqwfawdrwdf
+124123 1 2.3   asdfasdasdfawer
+823952 1 2.3  asdrqwgawfwqfaf
+123435 1 2.3   awdfawdfasdfasdfa
+123435 2 2.3   asdfas
+123435 3 2.3 aewrtafdawdfawefWEFAAEF
+222222 1 2.3 sdfasdfasfasdf asdfa
