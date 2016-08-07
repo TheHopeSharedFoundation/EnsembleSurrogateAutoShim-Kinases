@@ -1,0 +1,46 @@
+# $Id: BaseFeatures.fdef 489 2008-01-22 04:55:30Z glandrum $
+#
+# RDKit base fdef file.
+# Created by Greg Landrum
+#
+
+AtomType NDonor [N&!H0&v3,N&!H0&+1&v4,n&H1&+0]
+AtomType AmideN [$(N-C(=O))]
+AtomType SulfonamideN [$([N;H0]S(=O)(=O))]
+AtomType NDonor [$([Nv3](-C)(-C)-C)]
+
+AtomType NDonor [$(n[n;H1]),$(nc[n;H1])]
+
+AtomType ChalcDonor [O,S;H1;+0]
+DefineFeature SingleAtomDonor [{NDonor},{ChalcDonor}]
+  Family Donor
+  Weights 1
+EndFeature
+
+# aromatic N, but not indole or pyrole or fusing two rings
+AtomType NAcceptor [n;+0;!X3;!$([n;H1](cc)cc)]
+AtomType NAcceptor [$([N;H0]#[C&v4])]
+# tertiary nitrogen adjacent to aromatic carbon
+AtomType NAcceptor [N&v3;H0;$(Nc)]
+
+# removes thioether and nitro oxygen
+AtomType ChalcAcceptor [O;H0;v2;!$(O=N-*)] 
+Atomtype ChalcAcceptor [O;-;!$(*-N=O)] 
+
+# Removed aromatic sulfur from ChalcAcceptor definition
+Atomtype ChalcAcceptor [o;+0]
+
+# Hydroxyls and acids
+AtomType Hydroxyl [O;H1;v2]
+
+# F is an acceptor so long as the C has no other halogen neighbors. This is maybe
+# a bit too general, but the idea is to eliminate things like CF3
+#AtomType HalogenAcceptor [F;$(F-[#6]);!$(FC[F,Cl,Br,I])]
+AtomType HalogenAcceptor [F]
+AtomType CyanoAcceptor [$([N;H0;X1]#C)]
+
+DefineFeature SingleAtomAcceptor [{Hydroxyl},{ChalcAcceptor},{NAcceptor},{HalogenAcceptor},{CyanoAcceptor}]
+  Family Acceptor
+  Weights 1
+EndFeature
+
